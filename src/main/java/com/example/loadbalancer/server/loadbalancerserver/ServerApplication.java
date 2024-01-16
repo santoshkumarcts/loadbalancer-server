@@ -21,6 +21,6 @@ public class ServerApplication {
 	@GetMapping("/test")
 	public String hello(@RequestParam(value = "reqParam",required = true) String reqParam,@RequestParam(value = "param") String param)
 	{
-		return String.format("Hello from instance %s and reqParam %s and param %s", instanceId,reqParam);
+		return String.format("Hello from instance %s and reqParam %s and param %s", instanceId,reqParam,param);
 	}
 }
